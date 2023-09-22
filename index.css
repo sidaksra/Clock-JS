@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("bg.jpg");
+    background-size: cover; 
+    height: 100vh;
+    background-repeat: no-repeat;
+
+
+   
+}
+.myclock{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1em;
+    color: black;
+ 
+}
+.ampm{
+    background-color: rgba(0, 11, 167, 0.5);
+    padding: 1em;
+    color: white;
+ 
+}
+.clock{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap:5px
+}
+h1, h2{
+    font-size:2.5em;
+}
+html, body {
+    overflow: hidden;
+}
+@media screen and (max-width:450px) {
+    .clock{
+        flex-direction: column;
+        align-items: center;
+    }
+}
